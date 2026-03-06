@@ -470,4 +470,4 @@ if __name__ == '__main__':
         print("WARNING: Could not load model! Please run create_test_model.py first")
     
     print("Application starting on http://localhost:5000")
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run()

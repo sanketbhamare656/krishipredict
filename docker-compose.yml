@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  krishipredict:
+    container_name: krishipredict_app
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_ENV=production
+    restart: always
